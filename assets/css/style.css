@@ -4,8 +4,56 @@
     box-sizing: border-box;
     list-style: none;
     list-style-type: none;
+    user-select: none;
 }
 
 a {
     text-decoration: none;
+}
+
+body {
+    background: #edede7;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
+    touch-action: none;
+    cursor: grab;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.slide {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    will-change: transform, width, height;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+.slider-header {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+.slider-header h1 {
+    width: 50%;
+    font-size: clamp(3rem, 5vw, 7rem);
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 1;
 }
