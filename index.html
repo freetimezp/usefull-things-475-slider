@@ -1,19 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#090d12" />
+
+        <title>NOCTURNE — Beyond the Ordinary</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
     </head>
 
     <body>
-        <section class="slider">
-            <div class="slider-header">
-                <h1>Creative Experience</h1>
-            </div>
-        </section>
+        <main class="experience">
+            <section class="slider" aria-label="Cinematic image gallery">
+                <div class="atmosphere" aria-hidden="true"></div>
+                <div class="grain" aria-hidden="true"></div>
+                <div class="vignette" aria-hidden="true"></div>
+
+                <header class="topbar">
+                    <a class="brand" href="#top" aria-label="Nocturne home">
+                        <span class="brand-mark"></span>
+                        NOCTURNE<span class="brand-dot">.</span>
+                    </a>
+
+                    <span class="topbar-caption"> AN ATLAS OF FEELING </span>
+
+                    <div class="topbar-right">
+                        <span class="status-dot"></span>
+                        <span>INDEPENDENT VISUAL JOURNAL</span>
+                    </div>
+                </header>
+
+                <div class="hero-copy">
+                    <p class="eyebrow">
+                        <span>01</span>
+                        <span class="eyebrow-line"></span>
+                        THE ART OF GETTING LOST
+                    </p>
+
+                    <h1>
+                        Beyond<br />
+                        the <span>ordinary.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Places that stay with you. Moments that never really
+                        leave.
+                    </p>
+                </div>
+
+                <div class="slider-hint" aria-hidden="true">
+                    <span class="hint-icon">↔</span>
+                    <span>DRAG TO EXPLORE</span>
+                </div>
+
+                <div class="vertical-note" aria-hidden="true">
+                    COLLECT MOMENTS, NOT MILES
+                </div>
+
+                <footer class="bottom-bar">
+                    <div class="location">
+                        <span class="location-label">CURRENTLY EXPLORING</span>
+                        <span class="location-name" id="location-name">
+                            THE QUIET EARTH
+                        </span>
+                    </div>
+
+                    <div class="gallery-progress">
+                        <span class="progress-current" id="progress-current">
+                            01
+                        </span>
+
+                        <div class="progress-track">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+
+                        <span class="progress-total" id="progress-total">
+                            10
+                        </span>
+                    </div>
+
+                    <div class="bottom-credit">
+                        <span>AN EXERCISE IN WONDER</span>
+                        <span class="credit-year">MMXXVI</span>
+                    </div>
+                </footer>
+            </section>
+        </main>
 
         <script src="./assets/js/main.js"></script>
     </body>
