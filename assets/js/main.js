@@ -84,13 +84,13 @@
 
         const img = slide.querySelector("img");
 
-        img.src = `./assets/images/slide-img-${imageNumber}.jfif`;
+        img.src = `./assets/images/slide-img-${imageNumber}.jpg`;
     }
 
     // Preload the first few images.
     for (let i = 1; i <= Math.min(4, config.totalSlides); i++) {
         const img = new Image();
-        img.src = `./assets/images/slide-img-${i}.jfif`;
+        img.src = `./assets/images/slide-img-${i}.jpg`;
     }
 
     let scroll = 0;
